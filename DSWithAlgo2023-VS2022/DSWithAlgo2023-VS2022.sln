@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSWithAlgo", "DSWithAlgo\DSWithAlgo.csproj", "{F7537027-A2C0-40D3-A2F8-1D712A2245E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSWithAlgo.Tests", "DSWithAlgo.Tests\DSWithAlgo.Tests.csproj", "{2357A2B8-2AB7-4531-9E6A-95465B3F46AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7537027-A2C0-40D3-A2F8-1D712A2245E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7537027-A2C0-40D3-A2F8-1D712A2245E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7537027-A2C0-40D3-A2F8-1D712A2245E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7537027-A2C0-40D3-A2F8-1D712A2245E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2357A2B8-2AB7-4531-9E6A-95465B3F46AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2357A2B8-2AB7-4531-9E6A-95465B3F46AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2357A2B8-2AB7-4531-9E6A-95465B3F46AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2357A2B8-2AB7-4531-9E6A-95465B3F46AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74EB5AB5-4032-4E2A-930D-666E2F8623BE}
+	EndGlobalSection
+EndGlobal
