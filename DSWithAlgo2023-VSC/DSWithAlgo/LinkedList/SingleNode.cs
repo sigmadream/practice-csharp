@@ -1,14 +1,14 @@
 namespace DSWithAlgo.DS.LinkedList.SingleLinkedList
 {
-    public class SingleLinkedListNode
+    public class SingleLinkedListNode<T>
     {
-        public SingleLinkedListNode(int data)
+        public SingleLinkedListNode(T data)
         {
             Data = data;
             Next = null;
         }
 
-        public int Data { get; }
-        public SingleLinkedListNode? Next { get; set; }
+        public T Data { get; }
+        public SingleLinkedListNode<T>? Next { get; set; }
     }
 }
