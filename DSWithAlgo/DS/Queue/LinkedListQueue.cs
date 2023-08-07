@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DSWithAlgo.DS.Queue
+﻿namespace DSWithAlgo.DS.Queue
 {
     public class LinkedListQueue<T>
     {
         private readonly LinkedList<T> queue;
         public LinkedListQueue() => queue = new LinkedList<T>();
 
-        public void Enqueue(T item)
-        {
-            queue.AddLast(item);
-        }
+        public void Enqueue(T item) => queue.AddLast(item);
 
         public T Dequeue()
         {
