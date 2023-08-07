@@ -1,5 +1,7 @@
 using Xunit;
 using DSWithAlgo.DS.LinkedList;
+using System.Linq;
+
 
 namespace DSWithAlgo.Tests.LinkedList
 {
@@ -9,7 +11,7 @@ namespace DSWithAlgo.Tests.LinkedList
         private SingleLinkedList<int> ll2 = new SingleLinkedList<int>();
 
         [Fact]
-        public void AddLast()
+        public void TestAddLast()
         {
 
             ll.AddLast("X");
@@ -25,7 +27,7 @@ namespace DSWithAlgo.Tests.LinkedList
         }
 
         [Fact]
-        public void AddFirst()
+        public void TestAddFirst()
         {
 
             ll.AddLast("1");
@@ -40,11 +42,15 @@ namespace DSWithAlgo.Tests.LinkedList
         }
 
         [Fact]
-        public void GetData()
+        public void TestGetListData()
         {
             ll.AddLast("X");
             ll.AddLast("Y");
             ll.AddLast("Z");
+
+            var items = ll.GetListData();
+
+            Assert.Equal(3, items.Count());
             Assert.Equal("Y", ll.Index(1));
         }
 

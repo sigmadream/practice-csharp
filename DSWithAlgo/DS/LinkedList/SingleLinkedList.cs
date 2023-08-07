@@ -48,15 +48,7 @@ namespace DSWithAlgo.DS.LinkedList
 
             return length;
         }
-        public IEnumerable<T> GetData()
-        {
-            var tempNode = Head;
-            while (tempNode is not null)
-            {
-                yield return tempNode.Data;
-                tempNode = tempNode.Next;
-            }
-        }
+
         public T Index(int index)
         {
             if (index < 0)
@@ -78,6 +70,17 @@ namespace DSWithAlgo.DS.LinkedList
 
             return tempNode.Data;
         }
+
+        public IEnumerable<T> GetListData()
+        {
+            var tempElement = Head;
+            while (tempElement is not null)
+            {
+                yield return tempElement.Data;
+                tempElement = tempElement.Next;
+            }
+        }
+
         public bool Delete(T data)
         {
             var currentNode = Head;
