@@ -27,32 +27,22 @@ $ dotnet test
 ## 구현 목록
 
 - [x] Linked List
+  - [x] Singly Linked List
+  - [x] Doubly Linked List
+  - [x] Skip Linked List
 - [x] Stack
+  - [x] Array Stack
+  - [x] List Stack
 - [x] Queue
+  - [x] Array Queue
+  - [x] List Queue
 - [ ] Tree
   - [ ] Binary Search Tree
   - [ ] AVL Tree
   - [ ] Red-Black Tree
-  - [ ] B-Tree
-  - [ ] B+Tree
-  - [ ] Trie
   - [ ] Heap
 - [ ] Graph
-  - [x] Depth-First Search (DFS)
-  - [x] Breadth-First Search (BFS)
-  - [ ] Kruskal’s Algorithm
-  - [ ] Dijkstra Algorithm
-  - [ ] Bellman-Ford Algorithm
-  - [ ] Floyd-Warshall Algorithm
-  - [ ] Detect Cycle
-  - [ ] Prim’s Algorithm
-  - [ ] Topological Sorting
-  - [ ] Articulation Points
-  - [ ] Bridges - DFS based algorithm
-  - [ ] Eulerian Path and Eulerian Circuit
-  - [ ] Hamiltonian Cycle
-  - [ ] Strongly Connected Components
-  - [ ] Travelling Salesman Problem
+  - [ ] Directed Weighted Graph Via Adjacency Matrix
 
 ## Ref.
 
