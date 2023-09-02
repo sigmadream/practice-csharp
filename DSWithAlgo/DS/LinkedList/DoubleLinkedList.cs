@@ -4,6 +4,11 @@ namespace DSWithAlgo.DS.LinkedList
 {
     public class DoubleLinkedList<T>
     {
+        public int Count { get; private set; }
+        private DoubleLinkedListNode<T>? Head { get; set; }
+        private DoubleLinkedListNode<T>? Tail { get; set; }
+        public bool Contains(T data) => IndexOf(data) != -1;
+
         public DoubleLinkedList(T data)
         {
             Head = new DoubleLinkedListNode<T>(data);
@@ -18,10 +23,6 @@ namespace DSWithAlgo.DS.LinkedList
                 Add(d);
             }
         }
-
-        public int Count { get; private set; }
-        private DoubleLinkedListNode<T>? Head { get; set; }
-        private DoubleLinkedListNode<T>? Tail { get; set; }
 
         public DoubleLinkedListNode<T> AddHead(T data)
         {
@@ -148,7 +149,6 @@ namespace DSWithAlgo.DS.LinkedList
             return -1;
         }
 
-        public bool Contains(T data) => IndexOf(data) != -1;
 
         public void RemoveHead()
         {
