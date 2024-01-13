@@ -1,10 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Learn.Web.Models;
+using Learn.Services.Interfaces;
+using Learn.Services.Svcs;
+using Learn.Data.ViewModels;
 
 namespace Learn.Web.Controllers
 {
     public class Membership : Controller
     {
+        // private IUser _user = new UserService();
+        private IUser _user;
+
+        public Membership(IUser user)
+        {
+            _user = user;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -23,10 +33,7 @@ namespace Learn.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                string userId = "admin";
-                string password = "qwer1234";
-
-                if (login.UserId == userId && login.Password == password)
+                if (_user.MatchTheUserInfo(login))
                 {
                     TempData["Message"] = "로그인에 성공했습니다.";
                     return RedirectToAction("Index", "Membership");

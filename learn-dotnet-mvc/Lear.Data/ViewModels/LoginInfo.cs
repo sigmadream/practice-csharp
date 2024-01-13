@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Learn.Web.Models
+namespace Learn.Data.ViewModels
 {
     public class LoginInfo
     {

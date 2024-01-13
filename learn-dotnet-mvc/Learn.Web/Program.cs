@@ -1,7 +1,11 @@
+using Learn.Services.Interfaces;
+using Learn.Services.Svcs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IUser, UserService>();
 
 var app = builder.Build();
 
